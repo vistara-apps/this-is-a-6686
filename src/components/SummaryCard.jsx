@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ExternalLink, Bookmark, BookmarkCheck, Lightbulb, TrendingUp } from 'lucide-react'
+import { ExternalLink, Bookmark, BookmarkPlus, Lightbulb, TrendingUp } from 'lucide-react'
 import { generateSummary, extractInsights } from '../lib/openai'
 import { useInsights } from '../hooks/useInsights'
 import { useSubscription } from '../contexts/SubscriptionContext'
