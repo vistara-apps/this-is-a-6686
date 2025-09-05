@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: hsl(210, 36%, 90%);
+  }
+  
+  body {
+    background-color: hsl(210, 36%, 96%);
+    color: hsl(210, 20%, 20%);
+  }
+}
+
+@layer components {
+  .card {
+    background-color: hsl(210, 36%, 100%);
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px hsla(0, 0%, 0%, 0.16);
+  }
+  
+  .summary-block {
+    background-color: hsl(210, 36%, 100%);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  .insight-item {
+    background-color: hsl(210, 36%, 100%);
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  
+  .btn-primary {
+    background-color: hsl(210, 70%, 50%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-primary:hover {
+    background-color: hsl(210, 70%, 45%);
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn-secondary:hover {
+    background-color: hsl(210, 36%, 95%);
+  }
+}
