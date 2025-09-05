@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useState } from 'react'
+import NotificationCenter from './NotificationCenter'
 
 function Layout() {
   const { user, signOut } = useAuth()
@@ -113,6 +114,10 @@ function Layout() {
               <h2 className="text-lg font-semibold text-gray-900">
                 Your curated Reddit insights, distilled
               </h2>
+              
+              <div className="hidden lg:flex items-center space-x-4">
+                <NotificationCenter />
+              </div>
             </div>
           </div>
         </header>
